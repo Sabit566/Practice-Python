@@ -1,5 +1,3 @@
-from sklearn.externals.array_api_extra import testing
-
 print("\n")
 #Assign String to a Variable
 
