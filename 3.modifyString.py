@@ -23,3 +23,18 @@ txt = "  Harvard, Roosevelt  "
 print(f"Remove Whitespace: {txt.strip()}")
 
 print("\n")
+
+#Replace String
+
+txt = "Josh Hard"
+
+print(txt)
+print(f"Replace word J->H : {txt.replace('J', 'H')}")
+
+print("\n")
+
+#Split String, returns a list where the text between the specified separator becomes the list items
+
+txt = "Banana, Apple, Orange, Mango"
+
+print(f"List items: {txt.split(",")} ")
