@@ -82,3 +82,29 @@ thistuple = ("Kabbo","Fardin","Badhon")
 thislist.extend(thistuple)
 
 print(f"The list after extending to tuple: {thislist}")
+
+#Remove Specified Item -Remove the first occurrence of "banana"
+
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
+print(f"The list after removing from list: {thislist}")
+
+#Remove Specified Index -removes the specified index
+#If you do not specify the index, the pop() method removes the last item.
+
+thislist = ["apple", "banana", "cherry", "kiwi"]
+thislist.pop(1)
+print(f"The list after removing from list: {thislist}")
+
+thislists = ["apple", "banana", "cherry", "kiwi"]
+del thislists[0] # The del keyword also removes the specified index
+print(f"The list after removing from list: {thislists}")
+
+del thislists  # Delete the list completely
+#print(f"After deleting entire list: {thislists}")
+#Error: #this will cause an error because you have successfully deleted "thislist".
+
+#Clear the List -The list still remains, but it has no content
+thislists = ["apple", "banana", "cherry", "kiwi"]
+thislists.clear()
+print(f"The list after clear(): {thislists}")
