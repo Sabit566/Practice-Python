@@ -62,8 +62,8 @@ print(f"The list after appending to list: {thislist}")
 
 #Insert Items -To insert a list item at a specified index
 
-mylist = ['Sabit','Tanvir','Ovi','Wasim']
-mylist.insert(2, "Jayanto")
+mylists = ['Sabit','Tanvir','Ovi','Wasim']
+mylists.insert(2, "Jayanto")
 print(f"The list after inserting to list: {mylist}")
 
 #Extend List -To append elements from another list to the current list
@@ -108,3 +108,57 @@ del thislists  # Delete the list completely
 thislists = ["apple", "banana", "cherry", "kiwi"]
 thislists.clear()
 print(f"The list after clear(): {thislists}")
+
+#Loop Through a List
+
+thislists = ["apple", "banana", "cherry", "kiwi"]
+
+for i, x in enumerate(thislists, start=1):
+    print(f"{i}. {x}")
+
+#for x in thislists:
+#print(x)
+
+print("\n")
+
+#Loop Through the Index Numbers
+
+thislists = ["apple", "banana", "cherry", "kiwi"]
+print(f"The length of list: {len(thislists)}")
+for i in range(len(thislists)):
+    print(f"{i+1}. {thislists[i]}")
+
+print("\n")
+
+#Using a While Loop
+
+thislists = ["apple", "banana", "cherry", "kiwi"]
+
+i = 0
+print("Using a While Loop")
+while i < len(thislists):
+    print(f"{i}. {thislists[i]}")
+    i += 1
+print("\n")
+
+#Looping Using List Comprehension -shortest syntax for looping through lists
+
+thislists = ["apple", "banana", "cherry", "kiwi"]
+
+print("Looping Using List Comprehension")
+[print(f"{i}. {x}") for i, x in enumerate(thislists, start=1)]
+
+print("\n")
+
+#Based on a list of fruits, you want a new list,
+# containing only the fruits with the letter "a" in the name.
+
+fruits = ["apple", "banana", "cherry", "kiwi"]
+newlist = []
+
+for x in fruits:
+    if "a" in x:
+        newlist.append(x)
+
+print(f"The list items only contains letter 'a' : {newlist}")
+
